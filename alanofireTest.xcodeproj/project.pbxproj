@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A808540C13EADD61D441AAE /* Pods_alanofireTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810311C446629623EF2820F8 /* Pods_alanofireTest.framework */; };
 		D783A46028C4FA1100FFC504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783A45F28C4FA1100FFC504 /* AppDelegate.swift */; };
 		D783A46228C4FA1100FFC504 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783A46128C4FA1100FFC504 /* SceneDelegate.swift */; };
 		D783A46428C4FA1100FFC504 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783A46328C4FA1100FFC504 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14551A5087421AC569AB9A07 /* Pods-alanofireTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alanofireTest.release.xcconfig"; path = "Target Support Files/Pods-alanofireTest/Pods-alanofireTest.release.xcconfig"; sourceTree = "<group>"; };
+		810311C446629623EF2820F8 /* Pods_alanofireTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alanofireTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70B743C55C930D40981E0E8 /* Pods-alanofireTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alanofireTest.debug.xcconfig"; path = "Target Support Files/Pods-alanofireTest/Pods-alanofireTest.debug.xcconfig"; sourceTree = "<group>"; };
 		D783A45C28C4FA1100FFC504 /* alanofireTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alanofireTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D783A45F28C4FA1100FFC504 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D783A46128C4FA1100FFC504 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A808540C13EADD61D441AAE /* Pods_alanofireTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFD3B0542D0DCDE61BA18845 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C70B743C55C930D40981E0E8 /* Pods-alanofireTest.debug.xcconfig */,
+				14551A5087421AC569AB9A07 /* Pods-alanofireTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D783A45328C4FA1100FFC504 = {
 			isa = PBXGroup;
 			children = (
 				D783A45E28C4FA1100FFC504 /* alanofireTest */,
 				D783A45D28C4FA1100FFC504 /* Products */,
+				CFD3B0542D0DCDE61BA18845 /* Pods */,
+				FC0DFBB20C2C318AC7EA6BD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = alanofireTest;
 			sourceTree = "<group>";
 		};
+		FC0DFBB20C2C318AC7EA6BD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				810311C446629623EF2820F8 /* Pods_alanofireTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D783A47028C4FA1500FFC504 /* Build configuration list for PBXNativeTarget "alanofireTest" */;
 			buildPhases = (
+				B49C81B79747710E1A519C86 /* [CP] Check Pods Manifest.lock */,
 				D783A45828C4FA1100FFC504 /* Sources */,
 				D783A45928C4FA1100FFC504 /* Frameworks */,
 				D783A45A28C4FA1100FFC504 /* Resources */,
+				07D8EC99F320BFDB67019D77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07D8EC99F320BFDB67019D77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alanofireTest/Pods-alanofireTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alanofireTest/Pods-alanofireTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alanofireTest/Pods-alanofireTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B49C81B79747710E1A519C86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alanofireTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D783A45828C4FA1100FFC504 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		D783A47128C4FA1500FFC504 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70B743C55C930D40981E0E8 /* Pods-alanofireTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		D783A47228C4FA1500FFC504 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14551A5087421AC569AB9A07 /* Pods-alanofireTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
