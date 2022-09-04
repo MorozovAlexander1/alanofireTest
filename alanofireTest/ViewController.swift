@@ -28,21 +28,35 @@ class ViewController: UIViewController {
 
     func downloadImage(url: String) {
         
-        AF.download(url).responseData { (response) in
+        AF.download(url)
             
+            .validate()
+            .responseData { (response) in
             if let data = response.value {
                 
-                let ImageData = UIImage(data: data)
+                let image = UIImage(data: data)
                 
-                self.imageJson.image = ImageData
+                self.imageJson.image = image
+                
                 
                 self.activityidentificator.stopAnimating()
                 self.activityidentificator.isHidden = true
                 //self.activityidentificator.isHidden = true
+                
             }
+            
+            else {
+                print("error")
+                
+            }
+        }
+    
+     
+                
+            
         }
         
     }
     
-}
+
 
